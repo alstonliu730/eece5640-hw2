@@ -117,7 +117,6 @@ int main(int argc, char** argv) {
                 temp = atoi(optarg);
                 if (temp >= 2 || temp < 0) {
                     printf("Invalid Input for Pi Approximation Method. Using Monte-Carlo as default method.\n");
-                    break;
                 } else { 
                     part = temp; 
                 }
@@ -126,7 +125,6 @@ int main(int argc, char** argv) {
                 temp = atol(optarg);
                 if (temp <= 0) {
                     printf("Invalid input for sample size. Using default: %ld\n", num_trials);
-                    break;
                 } else {
                     num_trials = temp;
                 }
