@@ -81,7 +81,7 @@ void *monte_carlo_thread(void* args) {
     // update number of points after workload
     pthread_mutex_lock(&circle_lock);
     num_circle += local_num_circle;
-    printf("Num. of Circle in Thread %ld: %0.2f\n", pthread_self(), num_circle);
+    // printf("Num. of Circle in Thread %ld: %0.2f\n", pthread_self(), num_circle);
     pthread_mutex_unlock(&circle_lock);
     
     return NULL;
@@ -213,6 +213,7 @@ int liebniz_pi(int nThreads, int size) {
     printf("Liebniz Sum: %lf\n", sum);
     printf("Estimation of Pi: %0.12lf\n", pi);
 
+    
     return 0;
 }
 
@@ -266,9 +267,17 @@ int main(int argc, char** argv) {
         }
     }
 
+    int res = 0;
     if (!part) {
-        return monte_carlo_pi(numThreads, sample_size);
+        res = monte_carlo_pi(numThreads, sample_size);
     } else {
-        return liebniz_pi(numThreads, sample_size);
+        res = liebniz_pi(numThreads, sample_size);
     }
+
+    // Clean up procedure
+    pthread_mutex_destroy(&circle_lock);
+    pthread_mutex_destroy(&square_lock);
+    pthread_mutex_destroy(&sum_lock);
+    
+    return res;
 }

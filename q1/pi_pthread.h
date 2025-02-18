@@ -4,12 +4,17 @@
 # include <pthread.h>
 
 // Extern declarations of global variables
+// Monte-Carlo
 extern double num_circle;
 extern double num_square;
 extern pthread_mutex_t circle_lock;
 extern pthread_mutex_t square_lock;
+
+// Liebniz
 extern double sum;
 extern pthread_mutex_t sum_lock;
+
+// Functions
 double CLOCK();
 
 void intialize_thread_seed();
