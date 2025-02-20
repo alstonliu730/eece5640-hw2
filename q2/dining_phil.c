@@ -14,7 +14,7 @@ static int times = 12;
 
 typedef struct {
     int id;                     // id of the philosopher
-    int total_ph;
+    int total_ph;               // total number of philosophers
     int* states;                // address of the state of each philosopher
     pthread_cond_t* cond_vars;    // address of the list of condvar of each philosopher
     pthread_mutex_t* cond_lock; // address of the mutex lock for the conditional variables
@@ -43,7 +43,7 @@ void take_fork(ph_thread_t* ph, int phnum) {
 
     // change state to hungry
     ph->states[phnum] = HUNGRY;
-    // printf("Philosopher %d is Hungry\n", ph->id);
+    printf("Philosopher %d is Hungry\n", ph->id);
 
     // test for condition
     test(ph, phnum);
@@ -52,7 +52,7 @@ void take_fork(ph_thread_t* ph, int phnum) {
     if (ph->states[phnum] != EATING) {
         pthread_cond_wait(&ph->cond_vars[phnum], ph->cond_lock);
     }
-    // printf("Philosopher %d is Eating\n", ph->id);
+    printf("Philosopher %d is Eating\n", ph->id);
 
     pthread_mutex_unlock(ph->cond_lock);
 }
@@ -63,7 +63,7 @@ void put_fork(ph_thread_t* ph, int phnum) {
 
     // Indicates philosopher is thinking
     ph->states[phnum] = THINKING;
-    // printf("Philosopher %d is Thinking\n", ph->id);
+    printf("Philosopher %d is Thinking\n", ph->id);
 
     // Test for condition
     test(ph, RIGHT(ph->total_ph));
@@ -142,6 +142,7 @@ int philosopher_forks(int nThreads) {
 
     return 0;
 }
+
 int main(int argc, char** argv) {
     int opt;    // option int
     int nThreads =  5; // default 5 philosophers

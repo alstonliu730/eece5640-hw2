@@ -11,3 +11,6 @@ all: $(TARGETS)
 # Build the dining philosopher's fork
 dining_ph: dining_phil.c dining_phil.h
 	$(CC) $(CFLAGS) -o $@ dining_phil.c $(LDFLAGS)
+
+clean: $(TARGETS)
+	rm -f $(TARGETS)
