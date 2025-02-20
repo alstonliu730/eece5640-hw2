@@ -56,14 +56,14 @@ void *monte_carlo_thread(void* args) {
     
     // loop through the divided workload amount
     for(int i = 0; i < workload; i++) {
-        // acquire lock for square
-        pthread_mutex_lock(&square_lock);
+        // // acquire lock for square
+        // pthread_mutex_lock(&square_lock);
 
-        // increment square safely in mutex lock
-        num_square++;
+        // // increment square safely in mutex lock
+        // num_square++;
 
-        // return lock for square
-        pthread_mutex_unlock(&square_lock);
+        // // return lock for square
+        // pthread_mutex_unlock(&square_lock);
 
         // get random number
         double x = (double)(get_rand() % (max_size + 1)) / max_size;
@@ -127,7 +127,7 @@ int monte_carlo_pi(int nThreads, int size) {
     }
 
     // calculate the result of the pi
-    double pi = 4.0 * ((double) num_circle / (double) num_square);
+    double pi = 4.0 * ((double) num_circle / (double) size);
 
     // stop the clock & find total time it took to finish
     t2 = CLOCK();
@@ -137,7 +137,7 @@ int monte_carlo_pi(int nThreads, int size) {
     printf("------ Monte Carlo Result ------\n");
     printf("Time Elapsed: %0.3f ms\n", total);
     printf("Points in Circle: %d\n", (int) (num_circle));
-    printf("Points in Square: %d\n", (int) (num_square));
+    //printf("Points in Square: %d\n", (int) (num_square));
     printf("Estimation of Pi: %lf\n", pi);
 
     return 0;
