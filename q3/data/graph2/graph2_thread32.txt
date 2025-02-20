@@ -1,0 +1,110 @@
+]633;E;for i in {1..10};84714694-ffc4-4656-8c64-2e14666da803]633;CParallel Graph Coloring using OpenMP:
+Graph2(8, 12):
+Node 0 -> Color 2
+Node 1 -> Color 1
+Node 2 -> Color 0
+Node 3 -> Color 1
+Node 4 -> Color 2
+Node 5 -> Color 0
+Node 6 -> Color 0
+Node 7 -> Color 3
+Time elapsed: 1.101731 ms
+Parallel Graph Coloring using OpenMP:
+Graph2(8, 12):
+Node 0 -> Color 0
+Node 1 -> Color 2
+Node 2 -> Color 3
+Node 3 -> Color 2
+Node 4 -> Color 1
+Node 5 -> Color 0
+Node 6 -> Color 2
+Node 7 -> Color 1
+Time elapsed: 1.025047 ms
+Parallel Graph Coloring using OpenMP:
+Graph2(8, 12):
+Node 0 -> Color 0
+Node 1 -> Color 2
+Node 2 -> Color 2
+Node 3 -> Color 0
+Node 4 -> Color 1
+Node 5 -> Color 1
+Node 6 -> Color 1
+Node 7 -> Color 3
+Time elapsed: 1.202043 ms
+Parallel Graph Coloring using OpenMP:
+Graph2(8, 12):
+Node 0 -> Color 0
+Node 1 -> Color 3
+Node 2 -> Color 1
+Node 3 -> Color 0
+Node 4 -> Color 2
+Node 5 -> Color 1
+Node 6 -> Color 1
+Node 7 -> Color 2
+Time elapsed: 1.169760 ms
+Parallel Graph Coloring using OpenMP:
+Graph2(8, 12):
+Node 0 -> Color 2
+Node 1 -> Color 1
+Node 2 -> Color 3
+Node 3 -> Color 1
+Node 4 -> Color 2
+Node 5 -> Color 0
+Node 6 -> Color 1
+Node 7 -> Color 0
+Time elapsed: 1.145091 ms
+Parallel Graph Coloring using OpenMP:
+Graph2(8, 12):
+Node 0 -> Color 2
+Node 1 -> Color 1
+Node 2 -> Color 3
+Node 3 -> Color 1
+Node 4 -> Color 0
+Node 5 -> Color 0
+Node 6 -> Color 1
+Node 7 -> Color 0
+Time elapsed: 1.188020 ms
+Parallel Graph Coloring using OpenMP:
+Graph2(8, 12):
+Node 0 -> Color 1
+Node 1 -> Color 0
+Node 2 -> Color 0
+Node 3 -> Color 2
+Node 4 -> Color 1
+Node 5 -> Color 1
+Node 6 -> Color 2
+Node 7 -> Color 3
+Time elapsed: 1.142917 ms
+Parallel Graph Coloring using OpenMP:
+Graph2(8, 12):
+Node 0 -> Color 1
+Node 1 -> Color 2
+Node 2 -> Color 2
+Node 3 -> Color 1
+Node 4 -> Color 0
+Node 5 -> Color 0
+Node 6 -> Color 0
+Node 7 -> Color 3
+Time elapsed: 1.086232 ms
+Parallel Graph Coloring using OpenMP:
+Graph2(8, 12):
+Node 0 -> Color 1
+Node 1 -> Color 0
+Node 2 -> Color 0
+Node 3 -> Color 2
+Node 4 -> Color 1
+Node 5 -> Color 1
+Node 6 -> Color 0
+Node 7 -> Color 2
+Time elapsed: 1.147186 ms
+Parallel Graph Coloring using OpenMP:
+Graph2(8, 12):
+Node 0 -> Color 0
+Node 1 -> Color 1
+Node 2 -> Color 2
+Node 3 -> Color 1
+Node 4 -> Color 0
+Node 5 -> Color 0
+Node 6 -> Color 1
+Node 7 -> Color 2
+Time elapsed: 1.086272 ms

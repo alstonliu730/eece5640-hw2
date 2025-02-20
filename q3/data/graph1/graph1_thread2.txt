@@ -1,0 +1,90 @@
+Parallel Graph Coloring using OpenMP:
+Graph1(6, 8):
+Node 0 -> Color 2
+Node 1 -> Color 2
+Node 2 -> Color 1
+Node 3 -> Color 0
+Node 4 -> Color 0
+Node 5 -> Color 1
+Time elapsed: 0.068292 ms
+Parallel Graph Coloring using OpenMP:
+Graph1(6, 8):
+Node 0 -> Color 0
+Node 1 -> Color 0
+Node 2 -> Color 1
+Node 3 -> Color 0
+Node 4 -> Color 2
+Node 5 -> Color 1
+Time elapsed: 0.068652 ms
+Parallel Graph Coloring using OpenMP:
+Graph1(6, 8):
+Node 0 -> Color 0
+Node 1 -> Color 0
+Node 2 -> Color 1
+Node 3 -> Color 0
+Node 4 -> Color 2
+Node 5 -> Color 1
+Time elapsed: 0.043203 ms
+Parallel Graph Coloring using OpenMP:
+Graph1(6, 8):
+Node 0 -> Color 2
+Node 1 -> Color 2
+Node 2 -> Color 1
+Node 3 -> Color 0
+Node 4 -> Color 0
+Node 5 -> Color 1
+Time elapsed: 0.068416 ms
+Parallel Graph Coloring using OpenMP:
+Graph1(6, 8):
+Node 0 -> Color 0
+Node 1 -> Color 0
+Node 2 -> Color 1
+Node 3 -> Color 0
+Node 4 -> Color 2
+Node 5 -> Color 1
+Time elapsed: 0.070807 ms
+Parallel Graph Coloring using OpenMP:
+Graph1(6, 8):
+Node 0 -> Color 0
+Node 1 -> Color 0
+Node 2 -> Color 1
+Node 3 -> Color 0
+Node 4 -> Color 2
+Node 5 -> Color 1
+Time elapsed: 0.063601 ms
+Parallel Graph Coloring using OpenMP:
+Graph1(6, 8):
+Node 0 -> Color 0
+Node 1 -> Color 0
+Node 2 -> Color 1
+Node 3 -> Color 0
+Node 4 -> Color 2
+Node 5 -> Color 1
+Time elapsed: 0.063341 ms
+Parallel Graph Coloring using OpenMP:
+Graph1(6, 8):
+Node 0 -> Color 0
+Node 1 -> Color 0
+Node 2 -> Color 1
+Node 3 -> Color 0
+Node 4 -> Color 2
+Node 5 -> Color 1
+Time elapsed: 0.066692 ms
+Parallel Graph Coloring using OpenMP:
+Graph1(6, 8):
+Node 0 -> Color 0
+Node 1 -> Color 0
+Node 2 -> Color 2
+Node 3 -> Color 0
+Node 4 -> Color 1
+Node 5 -> Color 2
+Time elapsed: 0.067204 ms
+Parallel Graph Coloring using OpenMP:
+Graph1(6, 8):
+Node 0 -> Color 2
+Node 1 -> Color 2
+Node 2 -> Color 1
+Node 3 -> Color 0
+Node 4 -> Color 0
+Node 5 -> Color 1
+Time elapsed: 0.070026 ms
